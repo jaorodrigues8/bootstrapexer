@@ -1,29 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-</head>
-<style>
-    body{
-        background-image: url(https://media1.giphy.com/media/v1.Y2lkPTZjMDliOTUyc3FxY2ZzMzdmbnVnZjNva200dGtwdTQyM2EwaTdsZ29yYnN6eWhseiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0NwGpoOVLTAyUJSo/giphy.gif );
-        background-repeat: no-repeat;
-        margin: 0;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <title>Batman – The Dark Knight</title>
+
+  
+
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(90deg, #000, #fff);
+      background-image: url('https://th.bing.com/th/id/R.4871fa9f73219cad2611856c1386262c?rik=KyWBqrvB8as4%2fg&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fsepNm9t.jpg&ehk=giIbIv71ZYyaOar4pHj9%2buzn8dFL6Xddhz3uV8wsjoo%3d&risl=&pid=ImgRaw&r=0');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      color: #fff;
     }
-</style>
+
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    header {
+      text-align: center;
+      padding: 5rem 1rem;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    header h1 {
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #000;
+    }
+
+    .btn img {
+      width: 100px;
+      height: auto;
+    }
+  </style>
+</head>
+
 <body>
-   <nav class="navbar navbar-expand-sm">
+  
+  <nav class="navbar navbar-expand-sm navbar-dark">
     <div class="container">
-      <a class="navbar-brand " href="#">Batman</a>
+      <a class="navbar-brand font-weight-bold" href="#">Batman</a>
       <div>
         <a class="navbar-brand" href="#header">Início</a>
-        <a class="navbar-brand" href="#vantagens">Contato</a>
-         <a class="navbar-brand" href="#vantagens">sobre</a>
+        <a class="navbar-brand" href="#contato">Contato</a>
+        <a class="navbar-brand" href="#sobre">Sobre</a>
       </div>
     </div>
   </nav>
+
+  <!-- Cabeçalho -->
+  <header id="header">
+    <div class="container">
+      <h1>Batman – The Dark Knight (2008)</h1>
+      <p class="lead mt-4">
+        Com a ajuda do tenente James Gordon e do promotor Harvey Dent, o Batman tenta acabar de vez com o crime organizado em Gotham City. 
+        Mas o equilíbrio da cidade é destruído com a chegada do Coringa, um criminoso caótico que espalha o medo e desafia o herói a testar seus próprios limites morais. 
+        Enquanto o Coringa transforma Gotham em um campo de terror, Batman precisa enfrentar o dilema entre ser o protetor justo ou se tornar aquilo que combate, 
+        sacrificando tudo em nome da justiça.
+      </p>
+      <a href="#formulario" class="btn btn-light btn-lg mt-5 shadow-sm">
+        <img src="https://giffiles.alphacoders.com/166/166698.gif" alt="Batman">
+      </a>
+    </div>
+  </header>
+
+  <footer class="text-white text-center py-4">
+    <p class="mb-0">&copy; 2025. Todos os direitos reservados.</p>
+  </footer>
 
 </body>
 </html>
