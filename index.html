@@ -1,96 +1,127 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <title>Batman – The Dark Knight</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batman – The Dark Knight</title>
 
-  
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    >
 
-  <style>
-    body {
-      margin: 0;
-      background: linear-gradient(90deg, #000, #fff);
-      background-image: url('https://w0.peakpx.com/wallpaper/713/400/HD-wallpaper-the-dark-knight-2008-batman-2008-movie-action-the-dark-knight-film-entertainment.jpg ');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
-      color: #fff;
-    }
+    <style>
+      body {
+        margin: 0;
+        background: url('https://w0.peakpx.com/wallpaper/713/400/HD-wallpaper-the-dark-knight-2008-batman-2008-movie-action-the-dark-knight-film-entertainment.jpg')
+        no-repeat center / cover fixed;
+        color: #fff;
+        font-family: 'Segoe UI', sans-serif;
+      }
 
-    .navbar {
-      background-color: rgba(0, 0, 0, 0.7);
-        
-     
-    }
+      .navbar {
+        background: rgba(0, 0, 0, 0.85);
+      }
 
-    header {
-      text-align: center;
-      padding: 5rem 1rem;
-    
-        
+      .navbar-brand,
+      h1,
+      h2 {
+        color: #f1c40f !important;
+      }
 
-      
-    }
+      .nav-link {
+        color: #fff !important;
+      }
 
-    header h1 {
-      font-weight: bold;
-        bottom: 0;
-        position: fixed;
-        width: 100%;
+      .nav-link:hover {
+        color: #f1c40f !important;
+      }
+
+      header {
         text-align: center;
-    }
+        padding: 144px 16px;
+        background: rgba(0, 0, 0, 0.6);
+      }
 
-    footer {
-      background-color: #000;
-          bottom: 0;
-        position: fixed;
-        width: 100%;
+      header p {
+        max-width: 800px;
+        margin: auto;
+      }
+
+      .btn-light {
+        background: #f1c40f;
+        border: none;
+        color: #000;
+      }
+
+      section {
+        padding: 4rem 1rem;
+        background: rgba(0, 0, 0, 0.7);
         text-align: center;
-      
-    }
+      }
 
-    .btn img {
-      width: 300px;
-      height: auto;
-    }
-  </style>
-</head>
+      footer {
+        background: #000;
+        text-align: center;
+        padding: 0.8rem;
+        color: #f1c40f;
+      }
 
-<body>
-  
-  <nav class="navbar navbar-expand-sm navbar-dark">
-    <div class="container">
-      <a class="navbar-brand font-weight-bold" href="#">Batman</a>
-      <div>
-        <a class="navbar-brand" href="#header">Início</a>
-        <a class="navbar-brand" href="#contato">Contato</a>
-        <a class="navbar-brand" href="#sobre">Sobre</a>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Batman</a>
+        <div class="collapse navbar-collapse show">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#header">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contato">Contato</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
     </nav>
 
-
-  <header id="header">
-    <div class="container">
-      <h1>Batman –The Dark Knight (2008)</h1>
-      <p class="lead mt-4">
-        Com a ajuda do tenente James Gordon e do promotor Harvey Dent, o Batman tenta acabar de vez com o crime organizado em Gotham City. 
-        Mas o equilíbrio da cidade é destruído com a chegada do Coringa, um criminoso caótico que espalha o medo e desafia o herói a testar seus próprios limites morais. 
-        Enquanto o Coringa transforma Gotham em um campo de terror, Batman precisa enfrentar o dilema entre ser o protetor justo ou se tornar aquilo que combate, 
-        sacrificando tudo em nome da justiça.
+    <header id="header">
+      <h1>Batman – The Dark Knight (2008)</h1>
+      <p>
+        Batman, com Gordon e Dent, luta contra o crime em Gotham até o Coringa
+        desafiar seus limites morais e transformar a cidade em caos.
       </p>
-      <a href="#formulario" class="btn btn-light btn-lg mt-5 shadow-sm">
-        <img src="https://64.media.tumblr.com/1093dee4d2624529fb526c9b7c80ba11/f7cb7114c718313b-bd/s540x810/d1a216d53165830a3f69869cfc126017aea6cc12.gif " alt="">
-         <img src="https://64.media.tumblr.com/780aa4e05811dee6357a0f21675aa231/f7cb7114c718313b-11/s540x810/6d4801f7300f506a83ab6d2a9ed13c2c044ed060.gif">
-      </a>
-    </div>
-  </header>
+      <a href="#contato" class="btn btn-light mt-3">Saiba mais</a>
+    </header>
 
-  <footer class="text-white text-center py-3">
-    <p class="mb-0">&copy; 2025. Todos os direitos reservados.</p>
-  </footer>
+    <section id="sobre">
+      <h2>Sobre</h2>
+      <p>
+        Dirigido por Christopher Nolan, o filme traz um confronto psicológico
+        entre Batman e o Coringa, explorando justiça e moralidade.
+      </p>
+    </section>
 
-</body>
+    <section id="contato">
+      <h2>Contato</h2>
+      <form style="max-width: 400px; margin: auto;">
+        <input type="text" class="form-control mb-2" placeholder="Nome">
+        <input type="email" class="form-control mb-2" placeholder="E-mail">
+        <textarea class="form-control mb-2" rows="3" placeholder="Mensagem"></textarea>
+        <button class="btn btn-light btn-block">Enviar</button>
+      </form>
+    </section>
+
+    <footer>
+      © 2025 - confia oficial.
+    </footer>
+  </body>
 </html>
